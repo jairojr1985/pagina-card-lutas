@@ -1,0 +1,129 @@
+:root{
+    --darkgray:rgb(25, 24, 30);
+    --red:rgb(210, 10, 10);
+    --darkred:rgb(158, 8, 8);
+}
+
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+}
+
+body{
+    background: black;
+    font-family: arial, times, serif;
+    color:white;
+}
+
+header{
+    background: var(--darkgray);    
+}
+
+header.container{
+    display: flex;
+   flex-direction: row;
+   align-items: center;
+   justify-content: space-between;/*Para deixar a imagem do lado esquerdo e os links do lado direito criei uma div para a imagem, tudo dentro do container*/
+   
+}
+
+.container .pills .botaum{
+    text-decoration: none;
+    color: white;
+    margin-right: 10px;
+    padding: 10px 12px;
+    background-color: var(--darkgray);
+    border: 2px solid white;
+    text-transform: uppercase;
+    font-size: 0.75em;
+}
+
+.container .pills .botaum:hover{
+    background-color: var(--red);
+    transition: 0.3s ease-in ;
+}
+
+#vermelho-escuro{
+    background-color: var(--darkred);
+}
+
+#vermelho-escuro:hover{
+    background-color: var(--red);
+    transition: 0.3s ease-in;
+}
+
+/*conteudo principal*/
+
+.imagem-principal{
+    font-size: 1.5em;
+    background:linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)), url('../img/poatan1.png');
+    height: 650px;
+    width: 650px;
+    margin: center;
+    background-size: cover;
+    border-radius: 50%;
+    position: absolute;
+    margin-left: 350px;
+   
+}
+
+.imagem-principal .paragrafo{
+    display: flex;
+    
+    margin-top: 40%;
+    justify-content: center;
+    align-items: center;
+}
+
+.botoes{
+    margin-top: 150px;
+
+}
+
+.botoes .botao{
+    padding: 20px 70px;
+    align-items: center;
+    margin-left:50px;
+    cursor:pointer;
+    background: black;
+    color: #ffffff;
+    
+    border: 2px solid var(--red);
+}
+
+#branco{
+    background: white;
+    color:black
+}
+
+#branco:hover{
+    background-color: var(--red);
+    color:black;
+}
+
+.botoes .botao h5{
+    font-size: 1em;
+    font-weight: bolder;
+    text-transform: uppercase;
+    margin-bottom: 7px;
+}
+
+.botoes .botao h6{
+    text-transform: uppercase;
+}
+
+.botoes .botao:hover{
+    background-color: var(--red);
+    color:black;
+    transition: 0.3s;
+}
+
+.box-lutas{
+    height: 100%;
+    width: 100%;
+    display:flex;
+    margin-top: 670px;
+    padding-bottom: 2px;
+}
+
